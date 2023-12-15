@@ -15,6 +15,11 @@ public class PizzaApplication {
         int Choose = inputSelection(cheeses.length);
         System.out.println("You chose " + cheeses[Choose - 1]);
 
+//        printIngredients(meats);
+//        System.out.print("Your option is : ");
+//        int Meat = inputSelection(meats.length);
+//        System.out.println("You chose " + meats[Meat - 1]);
+
 
     }
 

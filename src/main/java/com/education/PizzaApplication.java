@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class PizzaApplication {
     private static Scanner scanner = new Scanner(System.in);
     private static String[] cheeses = {"Cheddar", "Edam", "Camembert", "Brie", "Mozzarella"};
-    private static String[] meats = {"Beacon", "Chicken", "Sausages", "Vegetarian", "Salami"};
+    private static String[] meats = {"Bacon", "Chicken", "Sausages", "Vegetarian", "Salami"};
 
     public static void main(String[] args) {
         System.out.println("Choose the ingredients for your pizza");
@@ -13,12 +13,15 @@ public class PizzaApplication {
         printIngredients(cheeses);
         System.out.print("Your option is : ");
         int Choose = inputSelection(cheeses.length);
-        System.out.println("You chose " + cheeses[Choose - 1]);
 
-//        printIngredients(meats);
-//        System.out.print("Your option is : ");
-//        int Meat = inputSelection(meats.length);
-//        System.out.println("You chose " + meats[Meat - 1]);
+        System.out.println();
+        System.out.println("Choose meats :");
+
+
+        printIngredients(meats);
+        System.out.print("Your option is : ");
+        int Meat = inputSelection(meats.length);
+        System.out.println("You ordered a Pizza with " + cheeses[Choose - 1] + " and " + meats[Meat - 1]);
 
 
     }
